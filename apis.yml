@@ -1,7 +1,17 @@
 aid: barkbox
-name: barkbox
-description: barkbox is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: BARK (BarkBox)
+description: >-
+  BARK, Inc. (operating as BarkBox) is a New York-based dog-focused consumer
+  company founded in 2011 by Henrik Werdelin and Matt Meeker, serving over two
+  million dogs monthly through its BarkBox and Super Chewer subscription boxes,
+  the BARK Bright dental line, the BARK Air pet travel experience, and retail
+  distribution. The company went public via a SPAC merger in 2021 (NYSE: BARK).
+  BarkBox does not operate a public developer program or externally documented
+  API portal; its engineering surface is a set of mostly-internal Ruby services
+  and open-source libraries published under the github.com/barkbox organization
+  (including the barkbox_client Ruby API client and cursor-pagination gems).
+  This profile was surfaced as a Slow Ventures portfolio company and enriched
+  with verified public identity and domain-security signals.
 url: https://raw.githubusercontent.com/api-evangelist/barkbox/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,29 @@ x-backed-by:
 - slow-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://bark.co/cdn/shop/files/bark-og-image-logo-1200x600.png
 tags:
 - Company
+- Pets
+- Ecommerce
+- Subscription
+- Consumer
+- Direct to Consumer
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,31 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/barkbox-domain-security.yml
 - type: Website
   url: https://barkbox.com
+- type: Website
+  name: Corporate Site
+  url: https://bark.co
+- type: GitHubOrganization
+  url: https://github.com/barkbox
+- type: Blog
+  url: https://bark.co/blogs/bark-post
+- type: Support
+  name: FAQs
+  url: https://bark.co/pages/faqs
+- type: Support
+  name: Contact
+  url: https://bark.co/pages/contact
+- type: TermsOfService
+  url: https://bark.co/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://bark.co/policies/privacy-policy
+- type: About
+  url: https://bark.co/pages/about
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
